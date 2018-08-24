@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="signin.css">
+</head>
+<body>
+
+
+  <form class="modal-content" action="action.php" style="height: 610px;margin-left:auto;margin-right:auto;border-color: #d8d8d880;border-left-width: 20px;border-right-width: 20px;border-top-width: 20px;border-bottom-width: 20px;box-shadow: 3px 3px;">
+  
+  	
+    <div class="containerS" style="width: 420px; height: 500px;">
+    
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      
+      <label for="soeid"><b>SOEID</b></label>
+      <input type="text" placeholder="Enter SOEID" name="soeid" required>
+      
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+		
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+      
+      <label for="role"><b>Role</b></label>
+      <input list="role" name="role" style="width: 421px; height: 39px; margin-top: 8px; display: inline-block; border:1px solid #ccc; box-sizing: border-box">
+  			<datalist id="role">
+    			<option value="Project Manager">
+    			<option value="Tech Head">
+    		</datalist>
+	  <hr></hr>	
+      <div class="clearfix">
+        <button type="button" onclick="location.href='./signin.html'" class="cancelbtn" style="height: 40px; width: 76px;">Cancel</button>
+        <button type="submit" class="signupbtn" style="width: 96px; height: 40px; padding-top: 10px; border-bottom-width: 6px; margin-bottom: 8px; padding-bottom: 10px; padding-left: 18px; padding-right: 18px;">
+        Sign Up</button>
+      </div>
+   
+  </div>
+  </form>
+
+
+</body>
+</html>

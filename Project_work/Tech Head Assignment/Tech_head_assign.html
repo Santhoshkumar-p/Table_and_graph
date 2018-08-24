@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="signin.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+.navbar-brand:hover {
+	background-color:white;
+
+}
+::placeholder {
+	text-align:left;
+}
+
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default" style="background-color: #d4dadc;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     	 <a class="navbar-brand" href="./register.html" ><span class="glyphicon glyphicon-home" ></span> &ensp; Tech Head</a>
+     
+    </div>
+	  <div class="dropdown">
+	  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width: 66px; margin-top: 8px; margin-left: 1608px;"><span class="glyphicon glyphicon-user"></span>
+	  <span class="caret"></span></button>
+	  <ul class="dropdown-menu" style="margin-left: 1700px;">
+	    <li><a href="#">Log out</a></li>
+	  </ul>
+</div>
+</div>
+</nav>
+
+
+<form id="myInput" class="modal-content" method="post" action="action.php" style="height: 540px;margin-left:auto;margin-right:auto;border-color: #d8d8d880;border-left-width: 20px;border-right-width: 20px;border-top-width: 20px;border-bottom-width: 20px;box-shadow: 3px 3px;width: 500px;">
+      <div class="containerS" style="width: 420px; height: 500px;">
+      <h1>Project Assignment</h1>
+      <hr>
+      <p>Please fill in this form to create project</p>
+	  <br>
+      <label for="projectname"><b>Project Name</b></label>
+      <input type="text" placeholder="Enter Project name" name="projectname" required>
+      
+      <label for="managerid"><b>Manager ID</b></label>
+      <input type="text" placeholder="Enter Manager ID" name="managerid" required>
+		
+      <label for="category"><b>Category</b></label>
+      <input list="category" placeholder="&nbsp; &nbsp;&nbsp; Select category" name="category" style="width: 421px; height: 39px; margin-top: 8px; display: inline-block; border:1px solid #ccc; box-sizing: border-box; text-align: center;" required>
+  			<datalist id="category" style="text-align: left;">
+    			<option value="Sales">
+    			<option value="Treasury">
+    			<option value="E-Dealer">
+    			
+    		</datalist>
+	  <hr></hr>	
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('myInput').reset()" class="cancelbtn" style="height: 40px; width: 76px; color:white;">Clear</button>
+        <button type="submit" class="signupbtn" style="width: 96px; height: 40px; padding-top: 10px; border-bottom-width: 6px; margin-bottom: 8px; padding-bottom: 10px; padding-left: 18px; padding-right: 18px; color:white;">
+        Submit</button>
+      </div>
+   
+  </div>
+  </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="signin.css">
+</head>
+<body>
+
+
+
+<form action="/action_page.php" method="post" style="border-right-width: 20px; border-left-width: 20px; margin-left:auto; margin-right:auto; /*margin-left: 696px;
+    margin-top: 0px;
+    margin-right: 50px;*/
+    width: 535px;
+    border-top-width: 40px;
+    border-bottom-width: 20px;
+    box-shadow: 2px 2px;">
+  
+
+  <div class="container">
+  
+  	<label for="login" style="font-family: inherit;"><b style="font-size: x-large;">Project Metrics Analyzer - Log in</b></label><br><hr></hr>
+  
+    <label for="uname" style="font-family: inherit;"><b>SOEID</b></label>
+    <input type="text" placeholder="Enter SOEID" name="uname" required>
+
+    <label for="psw" style="font-family: inherit;"s><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="font-family: inherit;">Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1;text-align-last: left;padding-right: 0px;padding-left: 0px;">
+    <button onclick="location.href='./register.html'" style="width:auto;" class="regbtn">Sign Up</button>
+ 
+  </div>
+</form>
+
+
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+</body>
+</html>

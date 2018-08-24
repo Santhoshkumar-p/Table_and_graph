@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="signin.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+.navbar-brand:hover {
+	background-color:white;
+
+}
+
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default" style="background-color: #d4dadc;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     	 <a class="navbar-brand" href="./register.html" ><span class="glyphicon glyphicon-home" ></span> &ensp; Tech Head</a>
+     
+    </div>
+	  <div class="dropdown">
+	  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width: 66px; margin-top: 8px; margin-left: 1608px;"><span class="glyphicon glyphicon-user"></span>
+	  <span class="caret"></span></button>
+	  <ul class="dropdown-menu" style="margin-left: 1700px;">
+	    <li><a href="#">Log out</a></li>
+	  </ul>
+</div>
+</div>
+</nav>
+
+
+<form id="myInput" class="modal-content" method="post" action="action.php" style="height:630px; margin-left:auto;margin-right:auto;border-color: #d8d8d880;border-left-width: 20px;border-right-width: 20px;border-top-width: 20px;border-bottom-width: 20px;box-shadow: 3px 3px;width: 500px;">
+      <div class="containerS" style="width: 420px; height: 500px;">
+      <h1>Project Metrics Allocation</h1>
+      <hr>
+      <p>Please fill in this form to add metrics for the project</p>
+	  <br>
+      <label for="projectid"><b>Project ID</b></label>
+      <input type="text" placeholder="Enter Project ID" name="projectid" required >
+      
+ 	  <b>Month</b>&nbsp;
+      <input list="month" placeholder="&nbsp; &nbsp;&nbsp; Select month" name="month" style="width: 421px; height: 39px; margin-top: 8px; display: inline-block; border:1px solid #ccc; box-sizing: border-box; width:35%; text-align: center;" required>
+  			<datalist id="month">
+    			<option value="January">
+    			<option value="February">
+    			<option value="March">
+    			<option value="April">
+    			<option value="May">
+    			<option value="June">
+    			<option value="July">
+    			<option value="August">
+    			<option value="September">
+    			<option value="October">
+    			<option value="November">
+    			<option value="December">
+    		</datalist>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Year</b>&nbsp;
+      <input list="year" placeholder="&nbsp; &nbsp;&nbsp; Select year" name="year" style="width: 421px; height: 39px; margin-top: 8px; display: inline-block; border:1px solid #ccc; box-sizing: border-box; width:35%; text-align: center;" required>
+  			<datalist id="year">
+    			<option value="2018">
+    			<option value="2019">
+    			<option value="2020">
+    			<option value="2021">
+    			<option value="2022">
+    			<option value="2023">
+    			<option value="2024">
+    			<option value="2025">
+    			<option value="2026">
+    			<option value="2027">
+    			<option value="2028">
+    			<option value="2029">
+    			<option value="2030">
+    		</datalist><br>
+    <br><b>Select suitable metrics:</b>&nbsp;
+	<span class="checkbox">
+		  <label><input type="checkbox" value="">Complexity</label>
+	</span>
+	<span class="checkbox">
+		  <label><input type="checkbox" value="">Lines of code</label>
+	</span>
+	<div class="checkbox disabled">
+		  <label><input type="checkbox" value="">Comments</label>
+	</div> 
+	<div class="checkbox">
+		  <label><input type="checkbox" value="">Duplicated lines</label>
+	</div>
+	<div class="checkbox">
+		  <label><input type="checkbox" value="">Issues</label>
+	</div>
+	<div class="checkbox">
+		  <label><input type="checkbox" value="">Bugs</label>
+	</div>
+	  <hr></hr>	
+   <div class="clearfix">
+        <button type="button" onclick="document.getElementById('myInput').reset()" class="cancelbtn" style="height: 40px; width: 76px; color:white;">Clear</button>
+        <button type="submit" class="signupbtn" style="width: 96px; height: 40px; padding-top: 10px; border-bottom-width: 6px; margin-bottom: 8px; padding-bottom: 10px; padding-left: 18px; padding-right: 18px; color:white;">
+        Submit</button>
+   </div>
+   
+  </div>
+  </form>
+
+
+
+</body>
+</html>
